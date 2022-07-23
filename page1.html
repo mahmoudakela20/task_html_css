@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="it is a task for Summer project .">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Abdullah</title>
+</head>
+<body>
+    <!--  Header  -->
+    <header class="container sticky">
+        <div class="content">
+            <div class="top-bar">
+                <ul class="list">
+                    <li class="list-item inline-block"><a href="#home-page">Home</a></li>
+                    <li class="list-item inline-block"><a href="#hobbies">Hobbies</a></li>
+                    <li class="list-item inline-block"><a href="#birthday">Birthday</a></li>
+                    <li class="list-item inline-block"><a href="#contact-us">Contact us</a></li>
+                    <li class="list-item inline-block"><a href="#slider">Slider</a></li>
+                    <li class="list-item inline-block"><a href="#cv">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- home page  -->
+    <div class="container">
+        <div class="home-page flex" id="home-page" >
+            <img src="images/logo.png" alt="logo" class="main-img"/>
+            <p class="about-us">Hey , I am Mahmoud Abdullah
+                <br>
+                I am programmer , Student at first year of Faculty of Computer Science .
+                <br>
+                I am 20 years Old , I hope you like my Website layout . 
+                <br>
+                Nice Time for you . 
+            </p>
+        </div>
+    </div>
+
+    <!--   hobbies  -->
+    <div class="container" id="hobbies" >
+        <h2 class="text-center">Hobbies</h2>
+        <div class="content hobbies">
+            <div class="hobby">
+                <img src="images/coding.png" alt="coding hobby">
+                <p>I can write codes easily</p>
+            </div>
+            <div class="hobby">
+                <img src="images/typing.png" alt="typing hobby">
+                <p>I can type on the computer easily without looking to the keyboard</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--   birthday  -->
+    <div class="container birthday" id="birthday" >
+        <h2 class="text-center">Birthday</h2>
+        <div class="content">
+            <img src="images/birthday.png" alt="birthday img" class="birthday-img">
+        </div>
+        <div class="content msg">
+            <form action="#thanks" method="get">
+                <textarea placeholder="Write a message here as a birthday message ..." name="birthday-msg" id="" ></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!--   Contact us    -->
+    <div class="container" id="contact-us" >
+        <h2 class="text-center">Contact us</h2>
+        <div class="content contact-us">
+            <form action="#thanks" method="get">
+                <input type="text" name="message" id="" placeholder="your message here ...." />
+                <input type="submit" value="Send">
+            </form>
+            <div class="social">
+                <ul class="social-media">
+                    <li><a href="#">
+                        <img src="" alt="Facebook"/></a></li>
+                    <li><a href="#">
+                        <img src="" alt="Twitter"/></a></li>
+                    <li><a href="#">
+                        <img src="" alt="Youtube"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--  thanks   -->
+    <div class="container" id="thanks">
+        <h2 class="text-center">Thanks For You</h2>
+        <div class="content thanks">
+            <img src="images/thanks.png" alt="thanks img"/>
+        </div>
+    </div>
+    
+    <!--  the CV   -->
+    <div class="container" id="cv">
+        <h2 class="text-center">CV</h2>
+        <div class="content">
+            <h3 class="name">Mahmoud Abdullah Akela</h3>
+            <h4 class="job">Student at the first year of faculty of Computers and Information .</h4>
+            <div class="skills">
+                <ul class="list">
+                    <li>
+                        <h5 class="skill">Problem Solving</h5>
+                    </li>
+                    <li>
+                        <h5 class="skill">Logical Thinking</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--  the slider  -->
+        <div class="container" id="slider">
+            <h2 class="text-center">slider</h2>
+           <div class="slideshow-container">
+           <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+         <img src="images/birthday.png" style="width:100%">
+         <div class="text"> Text</div>
+       </div>
+     
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+         <img src="images/coding.png" style="width:100%">
+         <div class="text"> Two</div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 3</div>
+         <img src="images/thanks.png" style="width:100%">
+         <div class="text"> Three</div>
+       </div>
+    </div>
+    </div>
+
+</body>
+</html>

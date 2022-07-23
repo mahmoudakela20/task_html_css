@@ -1,0 +1,361 @@
+/*
+Name : Task for Summer project 
+Languages : HTML & CSS
+Date : 21-07-2022
+Author : Mahmoud Abdullah Akela
+Phone : 01157141823
+National ID : 30208052401197
+*/
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* start my frame Work */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 5px;
+    font-size: 22px;
+}
+a:hover ,
+a:focus {
+    background-color: #f05;
+    color: #ddd;
+    border-radius: 45%;
+}
+
+/* end my frame Work */
+.container.sticky {
+    width: 100%;
+    background-color: #ddd;
+}
+.container.sticky .content {
+    box-shadow: 0px 2px 8px 2px #333;
+    width: 99.5%;
+    border-radius: 12px;
+}
+.list-item {
+    padding: 10px;    
+}
+.list-item a {
+    font-size: 2.1vw;
+}
+.home-page {
+    justify-content: space-between;
+    padding: 10px 2px;
+    box-shadow: 0px 2px 6px 2px #ccc;
+}
+.home-page img {
+    width: 47%;
+    height: 200px;
+}
+
+.home-page p {
+    width: 500px;
+    max-width: 50%;
+    align-items: center;
+    height: 200px;
+}
+
+/* hobbies section  */
+
+
+.container h2 {
+    padding: 6px;
+    margin-bottom: 3px;
+    color: #080;
+    box-shadow: 0px 0px 3px 0px #333;
+}
+
+.content.hobbies {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+
+.content .hobby {
+    width: 47%;
+    box-shadow: 0px 0px 3px 0px #333;
+    padding: 2px 6px;
+    text-align: center;
+}
+.hobby img {
+    width: 100%;
+    /* max-width: 100%; */
+    height: 160px;
+    margin: 0 auto;
+}
+
+.hobby img:hover {
+    transform: scale(1.2);
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* birthday section */
+
+.container.birthday img {
+    width: 100%;
+    height: 250px;
+    animation-name: hide-img;
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+.content.msg {
+    padding: 5px;
+    text-align: center;
+}
+.content.msg input[type="submit"]{
+    padding: 5px;
+    color: #080;
+}
+.container .content
+textarea {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    text-align: center;
+}
+
+/* animation  */
+@keyframes hide-img {
+    0%{
+        display: block;
+    }
+    100%{
+        display: none;
+    }
+}
+
+/* thanks section */
+.content.thanks img {
+    width: 100%;
+    height: 200px;
+}
+
+/* contact us section*/
+
+.content.contact-us {
+    text-align: center;
+}
+
+.content.contact-us input[type="text"] {
+    width: 60%;
+    margin: 3px 0px;
+    text-align: center;
+    min-height: 150px;
+}
+
+.content.content.contact-us input[type="submit"]{
+    padding: 5px;
+    color: #080;
+}
+
+/* slider section  */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .slideshow-container {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+  }
+
+
+/* cv section  */
+
+.name {
+    color: #900;
+    padding: 10px 5px 10px 0px;
+    position: relative;
+    display: inline-block;
+    margin: 5px 0px;
+    font-size: 23px;
+}
+.name::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #080;
+}
+
+.job {
+    color: #333;
+    font-size: 22px;
+}
+
+.skills ul.list li {
+    display: flex;
+    padding: 15px;
+    color: #080;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+}
+
+.skills ul.list li::after {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #080;
+}
+
+/* media queries  */
+@media screen and (max-width: 700px) {
+    .home-page {
+        display: block;
+    }
+    .home-page img , .home-page p {
+        width: 100%;
+        max-width: 100%;
+    }
+    .home-page p {
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        padding: 0;
+        
+    }
+    .content.hobbies {
+        display: block;
+    }
+    .content.hobbies .hobby {
+        width: 100%;
+    }
+}
+
